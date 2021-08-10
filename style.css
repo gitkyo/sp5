@@ -17,7 +17,11 @@ h2{
 	font-weight: bold;
 }
 
-p{
+h3{
+	font-family: 'Roboto', sans-serif;
+}
+
+p{ 
 	/*j'applique la police personalisé sur tous les paragraphes*/
 	font-family: 'Style Script', cursive;
 	font-size: 30px;
