@@ -11,6 +11,12 @@
 
 		<!-- balise link pour lier une feuille de style à la page html -->
 		<link rel="stylesheet" href="style.css">
+
+		<!-- ajout d'une police personalisé -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
 	</head>
 	
 	<!-- ici du css écrit dans le html au travers de l'attribut style-->
@@ -35,7 +41,8 @@
 
 			<!-- une image depuis mon dossier -->
 			<a href="https://fr.wikipedia.org/wiki/Caf%C3%A9">
-				<img width="30%" src="img/cafe.jpg" />
+				<!-- ajout d'une class sur cette image afin d'appliquer un style personalisé uniquement sur cette image -->
+				<img class="monImagePerso" width="30%" src="img/cafe.jpg" />
 			</a>
 
 			<!-- une image depuis internet -->
