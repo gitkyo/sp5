@@ -5,9 +5,10 @@
 h1{
 	
 	/*ici mes propriété css qui concerne la balise h1*/	
-	color: teal;
-	font-size: 15px;
-	border: 2px solid teal;
+    color: #33157b;
+    font-size: 41px;
+    border: 5px solid teal;
+    padding: 25px;
 
 }
 
