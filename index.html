@@ -18,6 +18,36 @@
 		<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">		
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+		<!-- ajout de animate css https://animate.style/  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<style>
+
+			/* ici ce selecteur veut dire : tout les balises paragraphes */
+			p{
+				opacity: 0.9;
+			}
+
+			/* ici ce selecteur veut dire : seulement l'élément htmlt qui s'appelle monParagraphePerso va recevoir les pripriété css  */
+			.monParagraphePerso{
+				opacity: 0.5;
+
+			}
+
+			.monTitreSpecial{
+				background-image: url(img/cafe.jpg);
+				background-size: contain;
+				background-position-x: 9%;
+				background-repeat: no-repeat;
+			}
+
+			
+		</style>
+
+
 	</head>
 	
 	<!-- ici du css écrit dans le html au travers de l'attribut style-->
@@ -40,11 +70,18 @@
 			  <a href='contact.html'><span>Contact</span></a>
 			</div>
 
+			<!-- The video  -->
+			<video autoplay muted loop id="myVideo">
+				<source src="img/video-rain.mp4" type="video/mp4">
+			</video>
+			
+			
+
 			<p>
 				ceci est un site de démo et syntèse des travaux des SP5 de l'<a href="https://www.ifr-reunion.re/" >ifr</a>
 			</p>
 
-			<p>
+			<p class="monParagraphePerso">
 				Voici <b>un mot en gras</b>, <u>un texte souligné</u> et une phrase en <i>italique</i>
 			</p>
 
@@ -57,7 +94,7 @@
 			</a>
 
 			<!-- une image depuis internet -->
-			<img width="30%" src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80">
+			<img class='animate__animated animate__flipInX' width="30%" src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80">
 
 			<!-- balise de retour à la ligne -->
 			<br/>
@@ -73,12 +110,12 @@
 
 
 		<!-- les balises de types titres -->
-		<h1> Ceci est un titre de niveau 1</h1>
-		<h2> Ceci est un titre de niveau 2</h2>
-		<h3> Ceci est un titre de niveau 3</h3>
-		<h4> Ceci est un titre de niveau 4</h4>
-		<h5> Ceci est un titre de niveau 5</h5>
-		<h6> Ceci est un titre de niveau 6</h6>
+		<h1 class="monTitreSpecial animate__animated animate__bounceInUp"> Ceci est un titre de niveau 1</h1>
+		<h2 class="animate__animated animate__fadeIn"> Ceci est un titre de niveau 2</h2>
+		<h3 class="animate__animated animate__fadeInUpBig"> Ceci est un titre de niveau 3</h3>
+		<h4 class="animate__animated animate__bounceInUp"> Ceci est un titre de niveau 4</h4>
+		<h5 class="animate__animated animate__tada"> Ceci est un titre de niveau 5</h5>
+		<h6 class="animate__animated animate__pulse"> Ceci est un titre de niveau 6</h6>
 
 
 		<p>Dépot github de la page web <a href="https://github.com/gitkyo/sp5">ici</a></p>
@@ -121,12 +158,12 @@
 			
 			<li><a href="https://tipatipapp.netlify.app/">Alice - Tipa tipa</a></li>
 			<li><a href="https://github.com/asinapan/tipatipa">Alexandre - Tipa tipa</a></li>
-			<li><a href="https://exploruntest.netlify.app/">Bianca - Explorun</a></li>
-
-			
+			<li><a href="https://exploruntest.netlify.app/">Bianca - Explorun</a></li>			
 			<li><a href="https://epic-jennings-49646d.netlify.app/">Georgie</a></li>
 			<li><a href="https://landing-page-eco-reef.netlify.app/">Fabrice</a></li>
 			<li><a href="https://portfoliorm.netlify.app/">Romain</a></li>
+			<li><a href="https://tipatipam2a.netlify.app/#">Mira</a></li>
+			
 			
 			
 		</ul>
@@ -165,6 +202,7 @@
 		</form>
 		</div>
 		<!--End mc_embed_signup-->
+
 
 
 	</body>
