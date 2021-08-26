@@ -20,6 +20,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 
+
+		<link rel="stylesheet" href="dist/css/introLoader.min.css">
+
 	</head>
 	
 	<!-- ici du css écrit dans le html au travers de l'attribut style-->
@@ -27,6 +30,9 @@
 		background-color: #FBAB7E;
 		background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 	">
+
+	<!-- balise du preloader -->
+	<div id="element" class="introLoading"></div>
 	
 
 	<center>
@@ -98,9 +104,35 @@
 		
 	</center>
 
+	<!-- script de bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	
+	<!-- script du preloader -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="dist/jquery.introLoader.pack.min.js"></script>
+
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-608127c017dc189b"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#element").introLoader({
+				spinJs: {
+
+					lines: 13, // The number of lines to draw
+					length: 20, // The length of each line
+					width: 10, // The line thickness
+					radius: 30, // The radius of the inner circle
+					corners: 1, // Corner roundness (0..1)
+					color: '#000', // #rgb or #rrggbb or array of colors
+					speed: 1, // Rounds per second
+					trail: 60, // Afterglow percentage
+					shadow: false // Whether to render a shadow
+
+				}
+			});
+		});
+	</script>
 
 	</body>
 </html>
